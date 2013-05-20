@@ -4,7 +4,7 @@ import pxssh
 from sys import argv
 from hashlib import sha512
 
-svr = ['mqsfiler02', 'mspcent02', 'mspcent03', 'mspcent01']
+svr = ['server1', 'server2', 'server3', 'server4']
 
 def auth_check():
     """ (str) -> Bool
@@ -48,7 +48,8 @@ def usage():
 	    print "./pexp.py 'ls'"
 	    print ""
 	    exit(0)
-																													if __name__ == '__main__':
+
+if __name__ == '__main__':
 	if auth_check() == True:
 		cmd = usage()
 		for box in svr:
