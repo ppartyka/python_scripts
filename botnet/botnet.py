@@ -7,14 +7,14 @@ from hashlib import sha512
 svr = ['server1', 'server2', 'server3', 'server4']
 
 def auth_check():
-    """ (str) -> Bool
+	""" (str) -> Bool
 	Checks user password to run the script.
 	"""
 	PW = raw_input("> ")
 	if sha512(PW).hexdigest() == 'hashed sha512 password':
 		return True
 	else:
-	    return False
+		return False
 
 def send_cmd(s, cmd):
 	'''(NoneType, str) -> str
