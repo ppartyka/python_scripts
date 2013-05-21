@@ -1,4 +1,4 @@
-#!/usr/bin/python1
+#!/usr/bin/python
 
 import pxssh
 from sys import argv

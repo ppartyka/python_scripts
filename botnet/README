@@ -1,1 +1,28 @@
-Python 2.X
+Python Version 2.7.X
+
+Non-Standard Modules:
+pexpect
+pxssh
+
+Preconditions:
+
+'svr' variable - assumes that you have at least 1 server that you can connect to
+via hostname or IP. Replace serverN with your server IPs or hostnames. e.g.
+
+svr = [ '192.168.1.5' ] 
+
+auth_check - 'hashed sha513 password' requires that the user provided a hashed sha512 value e.g.:
+
+'cbe0cd68cbca3868250c0ba545c48032f43eb0e8a5e6bab603d109251486f77a91e46a3146d887e37416c6bdb6cbe701bd514de778573c9b0068483c1c626aec'
+
+To get a hased password, lookup the hashme.py program on my blog or do the following from your command line:
+
+python
+>>> import hashlib
+>>> hashlib.sha512('Password1').hexdigest()
+
+This will give you a hashed value for 'Password1' or whatever text you substitute it with.
+
+S = login(box, 'username', 'password') - username and password should be replaced with the username and password
+for the server or servers you provided. If you have a different username and pass for every server you are connecting
+to then all you have to do is rewrite with a dictionary :) Maybe I'll upload a version that does something like that. 
