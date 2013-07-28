@@ -15,3 +15,12 @@ wordlist.py http://www.ppartyka.com filename
 
 will output the parsed words onto the screen.
 
+wordlist.py works on python 2.X and NOT with python 3.X
+
+Tested on linux and unix platforms without issues, but has
+not been tested on windows... 
+
+modules used are:
+urllib
+HTMLParser
+sys
