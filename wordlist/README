@@ -1,0 +1,17 @@
+Word list is a simple app that pulls words from a webpage and gives you a list.
+
+usage goes something like this:
+
+wordlist.py http://www.ppartyka.com filename > list.txt
+
+This will create a filename.html in the directory you ran wordlist.
+The html file will still have html tags intact. 
+
+> list.txt will redirect the output into the file list.txt
+
+If you do not redirect output it'll just display onto the screen so:
+
+wordlist.py http://www.ppartyka.com filename 
+
+will output the parsed words onto the screen.
+
