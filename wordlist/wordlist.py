@@ -11,15 +11,15 @@ webfile1 = argv[2] + '.html'
 webfile2 = open(webfile1, 'w+')
 
 class MLStripper(HTMLParser):
-    def __init__(self):
+	def __init__(self):
 		self.reset()
 		self.fed = []
 
-    def handle_data(self, d):
-	    self.fed.append(d)
+	def handle_data(self, d):
+		self.fed.append(d)
 
-    def get_data(self):
-	    return ''.join(self.fed)
+	def get_data(self):
+		return ''.join(self.fed)
 
 
 def strip_tags(html):
