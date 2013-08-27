@@ -33,8 +33,8 @@ def login(host, user, passwd):
 		s.login(host, user, passwd)
 		return s
 	except:
-	    print '[-] Error Connecting'
-	    exit(0)
+		print '[-] Error Connecting'
+		exit(0)
 
 def usage():
 	''' () -> NoneType
@@ -44,10 +44,10 @@ def usage():
 		script, cmd = argv
 		return argv
 	except:
-	    print "This program needs at least 1 input in quotes as a command to send to bot nodes:"
-	    print "./pexp.py 'ls'"
-	    print ""
-	    exit(0)
+		print "This program needs at least 1 input in quotes as a command to send to bot nodes:"
+		print "./pexp.py 'ls'"
+		print ""
+		exit(0)
 
 if __name__ == '__main__':
 	if auth_check() == True:
