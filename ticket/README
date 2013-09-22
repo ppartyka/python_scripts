@@ -1,0 +1,20 @@
+This script came into existence because we needed a quick fix for a way
+to keep track of some ticketing. It is a very simple ticketing system that
+increments the ticket number and sends ticket information to an email account
+where you can keep track of said tickets.
+
+This script is using python3
+
+The libs are standard:
+smtplib
+time
+
+You HAVE to creat the file for the "ticket" variable. 
+
+I've used tnum.txt and it is in the directory where the script lives. 
+
+Also this has been tested on the following systems:
+CentOS 6.4
+Ubuntu 12.X +
+Kali Linux
+BT5 R3
