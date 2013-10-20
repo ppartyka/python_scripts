@@ -1,0 +1,22 @@
+Python Version: 2.7.3
+
+Operating Systems Tested:
+Backtrack 5R3
+Kali Linux
+CentOS 6.N
+Ubuntu 12.N
+
+Python standard library:
+re
+crypt
+sys
+
+Input:
+The script requires 2 files an /etc/shadow file 
+and a wordlist (separated by new lines):
+
+"""
+wordone
+wordtwo
+wordthree
+"""
